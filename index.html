@@ -36,7 +36,7 @@
       overflow-x:hidden;
     }
 
-    /* ==== GLOBAL BG + EFFECT (sama kayak index) ==== */
+    /* ==== GLOBAL BG + EFFECT (sama vibe index) ==== */
     .page-bg{
       position:fixed;
       inset:0;
@@ -87,11 +87,55 @@
     .warranty-card{
       background:radial-gradient(circle at top, rgba(255,255,255,0.03), transparent 55%),var(--card);
       border-radius:var(--radius-card);
-      padding:28px 26px 26px;
+      padding:26px 26px 26px;
       border:1px solid var(--border-soft);
       box-shadow:var(--shadow-soft);
     }
 
+    /* ==== LOGO + BRAND ==== */
+    .logo-wrap{
+      display:flex;
+      justify-content:center;
+      margin-bottom:10px;
+    }
+    .logo-circle{
+      width:110px;
+      height:110px;
+      border-radius:999px;
+      overflow:hidden;
+      background:radial-gradient(circle at 30% 20%, #fff7c8 0%, #ffe083 35%, #d4a937 70%, #7f6518 100%);
+      border:2px solid rgba(255,220,140,0.65);
+      box-shadow:
+        0 14px 36px rgba(0,0,0,0.9),
+        inset 0 7px 12px rgba(255,255,255,0.23),
+        inset 0 -7px 12px rgba(0,0,0,0.45);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .logo-circle img{
+      width:94%;
+      height:94%;
+      object-fit:contain;
+      border-radius:50%;
+    }
+
+    .brand-headline{
+      text-align:center;
+      margin-bottom:22px;
+    }
+    .brand-headline .brand{
+      margin:6px 0 2px;
+      font-size:1.35rem;
+      color:var(--accent-strong);
+    }
+    .brand-headline .subline{
+      margin:0;
+      font-size:.86rem;
+      color:var(--text-muted);
+    }
+
+    /* ==== TITLE + BACK BTN ==== */
     .header-row{
       display:flex;
       justify-content:space-between;
@@ -267,12 +311,25 @@
 
   <main class="shell">
     <section class="warranty-card">
+
+      <!-- Logo + Brand -->
+      <div class="logo-wrap">
+        <div class="logo-circle">
+          <img src="logo.png" alt="Logo VanzShop.com">
+        </div>
+      </div>
+      <div class="brand-headline">
+        <div class="brand">VanzShop.com</div>
+        <p class="subline">Solusi Produk Digital Terbaik</p>
+      </div>
+
+      <!-- Title + Back -->
       <div class="header-row">
         <div class="title-block">
           <h1>Syarat & Ketentuan di VanzShop.com</h1>
           <p>Pilih produk untuk melihat detail ketentuan dan garansi yang berlaku.</p>
         </div>
-        <a href="index.html" class="back-btn">
+        <a href="https://vanzshop.com" class="back-btn">
           ← Kembali ke Menu Utama
         </a>
       </div>
