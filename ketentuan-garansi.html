@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Ketentuan Garansi — VanzShop.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Syarat & ketentuan garansi produk digital di VanzShop.com. Baca aturan lengkap sebelum membeli.">
+  <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#050509;
+      --card:#111118;
+      --card-soft:#151522;
+      --accent:#f7d46a;
+      --accent-soft:rgba(247,212,106,0.2);
+      --accent-strong:#ffdf7a;
+      --text:#f5f5f5;
+      --text-muted:#b3b3c2;
+      --border-soft:rgba(255,255,255,0.06);
+      --radius-card:32px;
+      --shadow-soft:0 28px 80px rgba(0,0,0,0.9);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;}
+    html,body{margin:0;padding:0;}
+    body{
+      min-height:100vh;
+      font-family:"Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      overflow-x:hidden;
+    }
+
+    /* ==== GLOBAL BG + EFFECT (sama kayak index) ==== */
+    .page-bg{
+      position:fixed;
+      inset:0;
+      z-index:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(40,40,90,0.85), transparent 60%),
+        radial-gradient(circle at 50% 120%, rgba(8,8,18,0.9), #050509 70%);
+    }
+    .page-bg::after{
+      content:"";
+      position:absolute;
+      right:-140px;
+      top:-20px;
+      width:420px;
+      height:420px;
+      background:radial-gradient(circle, rgba(247,212,106,0.42) 0%, transparent 60%);
+      filter:blur(6px);
+      opacity:.9;
+      mix-blend-mode:screen;
+    }
+    .orb{
+      position:absolute;
+      border-radius:999px;
+      background:radial-gradient(circle at 30% 20%, rgba(255,255,255,0.06), transparent 65%);
+      opacity:.55;
+      animation:floatOrb 36s ease-in-out infinite alternate;
+    }
+    .orb-1{width:160px;height:160px;left:6%;top:40%;animation-delay:-6s;}
+    .orb-2{width:240px;height:240px;right:8%;bottom:-40px;animation-delay:-14s;}
+    .orb-3{width:130px;height:130px;right:22%;top:18%;animation-delay:-22s;}
+
+    @keyframes floatOrb{
+      0%{transform:translate3d(0,0,0);opacity:.45;}
+      50%{transform:translate3d(18px,-24px,0);opacity:.8;}
+      100%{transform:translate3d(-12px,-6px,0);opacity:.5;}
+    }
+
+    /* ==== LAYOUT ==== */
+    .shell{
+      width:100%;
+      max-width:980px;
+      padding:40px 18px 34px;
+      position:relative;
+      z-index:1;
+    }
+
+    .warranty-card{
+      background:radial-gradient(circle at top, rgba(255,255,255,0.03), transparent 55%),var(--card);
+      border-radius:var(--radius-card);
+      padding:28px 26px 26px;
+      border:1px solid var(--border-soft);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .header-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:16px;
+      margin-bottom:20px;
+    }
+
+    .title-block h1{
+      margin:0 0 6px;
+      font-size:1.7rem;
+    }
+    .title-block p{
+      margin:0;
+      font-size:.9rem;
+      color:var(--text-muted);
+    }
+
+    .back-btn{
+      align-self:flex-start;
+      padding:8px 14px;
+      border-radius:999px;
+      background:rgba(97,95,196,0.18);
+      border:1px solid rgba(255,255,255,0.08);
+      color:#f5edff;
+      font-size:.83rem;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      cursor:pointer;
+      transition:background .12s,border-color .12s,transform .1s;
+      white-space:nowrap;
+    }
+    .back-btn:hover{
+      background:rgba(97,95,196,0.3);
+      border-color:rgba(247,212,106,0.7);
+      transform:translateY(-1px);
+    }
+
+    /* ==== SELECT PRODUK ==== */
+    .filter-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+      margin-bottom:20px;
+    }
+
+    .select-wrap{
+      position:relative;
+      flex:1 1 260px;
+    }
+    .select-label{
+      display:block;
+      font-size:.8rem;
+      color:var(--text-muted);
+      margin-bottom:4px;
+    }
+    select{
+      width:100%;
+      padding:10px 40px 10px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.12);
+      background:linear-gradient(135deg,#161624,#101018);
+      color:var(--text);
+      font-family:inherit;
+      font-size:.9rem;
+      outline:none;
+      appearance:none;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      cursor:pointer;
+      box-shadow:0 10px 24px rgba(0,0,0,0.7);
+    }
+    select:focus{
+      border-color:rgba(247,212,106,0.85);
+    }
+    .select-caret{
+      position:absolute;
+      right:14px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:.75rem;
+      pointer-events:none;
+      color:var(--text-muted);
+    }
+
+    /* ==== CONTENT PANELS ==== */
+    .panels{
+      display:grid;
+      grid-template-columns:1.1fr 1.1fr;
+      gap:16px;
+      margin-top:6px;
+    }
+
+    .panel{
+      background:linear-gradient(145deg,var(--card-soft),#10101a);
+      border-radius:22px;
+      padding:16px 16px 14px;
+      border:1px solid rgba(255,255,255,0.06);
+      box-shadow:0 16px 30px rgba(0,0,0,0.65);
+    }
+
+    .panel-title{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:10px;
+      font-size:.94rem;
+      text-transform:uppercase;
+      letter-spacing:.03em;
+      color:var(--accent-strong);
+    }
+    .panel-title span.icon{
+      width:26px;
+      height:26px;
+      border-radius:999px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(0,0,0,0.6);
+      font-size:1rem;
+    }
+
+    .divider-line{
+      height:1px;
+      width:100%;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent);
+      margin-bottom:10px;
+    }
+
+    ul.rules{
+      list-style:none;
+      padding-left:0;
+      margin:0;
+    }
+    ul.rules li{
+      position:relative;
+      padding-left:16px;
+      margin-bottom:6px;
+      font-size:.86rem;
+      color:var(--text-muted);
+    }
+    ul.rules li::before{
+      content:"•";
+      position:absolute;
+      left:0;
+      top:0;
+      color:var(--accent-strong);
+    }
+
+    .placeholder{
+      font-size:.85rem;
+      color:var(--text-muted);
+      opacity:.9;
+    }
+
+    @media (max-width:768px){
+      .warranty-card{padding:22px 16px 20px;}
+      .header-row{flex-direction:column-reverse;align-items:flex-start;}
+      .title-block h1{font-size:1.4rem;}
+      .panels{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <div class="page-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <main class="shell">
+    <section class="warranty-card">
+      <div class="header-row">
+        <div class="title-block">
+          <h1>Syarat & Ketentuan di VanzShop.com</h1>
+          <p>Pilih produk untuk melihat detail ketentuan dan garansi yang berlaku.</p>
+        </div>
+        <a href="index.html" class="back-btn">
+          ← Kembali ke Menu Utama
+        </a>
+      </div>
+
+      <!-- SELECT PRODUK -->
+      <div class="filter-row">
+        <div class="select-wrap">
+          <label for="productSelect" class="select-label">Pilih Produk</label>
+          <select id="productSelect">
+            <option value="">-- Silakan Pilih Produk --</option>
+            <option value="canva_lifetime">Canva Lifetime</option>
+            <option value="capcut_pro">CapCut Pro</option>
+            <option value="alight_motion">Alight Motion 1 Tahun</option>
+            <option value="chatgpt">ChatGPT Premium</option>
+            <option value="netflix">Netflix Premium</option>
+            <option value="spotify">Spotify Premium</option>
+          </select>
+          <span class="select-caret">▾</span>
+        </div>
+      </div>
+
+      <!-- PANELS -->
+      <div class="panels">
+        <div class="panel" id="panelSyarat">
+          <div class="panel-title">
+            <span class="icon">📋</span>
+            <span>Syarat Produk</span>
+          </div>
+          <div class="divider-line"></div>
+          <ul class="rules" id="syaratList">
+            <li class="placeholder">
+              Silakan pilih produk terlebih dahulu untuk melihat syarat yang berlaku.
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel" id="panelGaransi">
+          <div class="panel-title">
+            <span class="icon">🛡️</span>
+            <span>Ketentuan Garansi</span>
+          </div>
+          <div class="divider-line"></div>
+          <ul class="rules" id="garansiList">
+            <li class="placeholder">
+              Garansi berbeda untuk setiap produk. Pilih produk di atas untuk detail lengkap.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // TEMPLATE DATA GARANSI — bebas lo edit/extend
+    const WARRANTY_DATA = {
+      canva_lifetime: {
+        syarat: [
+          "Produk berupa akun Canva resmi (bukan trial / crack).",
+          "Tidak boleh digunakan untuk spam, phising, atau konten melanggar hukum.",
+          "Akun boleh dipakai di beberapa device milik sendiri.",
+          "Dilarang ganti email utama tanpa izin admin."
+        ],
+        garansi: [
+          "Garansi login 1 tahun penuh sejak tanggal aktivasi.",
+          "Jika akun logout sendiri / tidak bisa diakses, admin akan ganti akun baru.",
+          "Garansi hangus jika akun dipakai untuk melanggar ToS Canva.",
+          "Tidak ada refund setelah akun berhasil aktif."
+        ]
+      },
+      capcut_pro: {
+        syarat: [
+          "Aktivasi via akun yang disediakan atau akun pribadi (sesuai paket).",
+          "Wajib mengikuti panduan aktivasi yang dikirim admin.",
+          "Pastikan aplikasi CapCut sudah versi terbaru.",
+          "Tidak boleh share akun ke pihak lain di luar 1 rumah tangga."
+        ],
+        garansi: [
+          "Garansi full akses tools PRO selama masa aktif paket.",
+          "Jika fitur PRO hilang, akan dibantu aktivasi ulang maksimal 3x.",
+          "Garansi tidak berlaku jika logout akun sendiri tanpa backup.",
+          "Tidak menanggung banned akibat pelanggaran hak cipta."
+        ]
+      },
+      alight_motion: {
+        syarat: [
+          "Akun hanya digunakan untuk kebutuhan editing pribadi / komersial ringan.",
+          "Dilarang menjual ulang akun tanpa izin.",
+          "Login maksimal pada 2–3 device milik sendiri.",
+          "Tidak digunakan untuk modifikasi ilegal aplikasi."
+        ],
+        garansi: [
+          "Garansi 1 tahun akses premium Alight Motion.",
+          "Jika tiba-tiba kembali ke versi free, admin akan bantu perbaikan.",
+          "Tidak ada penggantian jika akun diubah email/password tanpa konfirmasi.",
+          "Garansi tidak menanggung banned dari developer akibat misuse."
+        ]
+      },
+      chatgpt: {
+        syarat: [
+          "Hanya untuk keperluan normal (belajar, kerja, bisnis, riset).",
+          "Dilarang spam request untuk aktivitas ilegal / melanggar ToS OpenAI.",
+          "Tidak boleh share akun ke publik / grup besar.",
+          "Wajib menjaga kerahasiaan email & password akun."
+        ],
+        garansi: [
+          "Garansi akses ChatGPT Premium sesuai paket yang dibeli.",
+          "Jika akun tiba-tiba suspend tanpa pelanggaran, admin akan bantu cek & ganti.",
+          "Garansi gugur jika digunakan untuk tindakan abuse (spam, cracking, dll).",
+          "Tidak ada refund jika suspend karena pelanggaran kebijakan OpenAI."
+        ]
+      },
+      netflix: {
+        syarat: [
+          "Profil hanya untuk 1 orang, tidak boleh diubah nama akun utama.",
+          "Dilarang mengubah email/password pemilik utama.",
+          "Gunakan maksimal pada jumlah device yang diizinkan paket.",
+          "Pastikan jaringan internet stabil saat streaming."
+        ],
+        garansi: [
+          "Garansi nonton sesuai masa aktif paket (7/30 hari, dst).",
+          "Jika profil hilang/tidak bisa masuk, akan diganti akses baru.",
+          "Garansi tidak menanggung kendala dari ISP / blokir regional.",
+          "Tidak ada refund jika diblokir karena penggunaan di luar ketentuan."
+        ]
+      },
+      spotify: {
+        syarat: [
+          "Akun bisa berupa invite ke Family / akun khusus.",
+          "Dilarang ganti email / negara akun tanpa konfirmasi.",
+          "Gunakan hanya di aplikasi resmi Spotify.",
+          "Tidak boleh dijual kembali ke pihak lain."
+        ],
+        garansi: [
+          "Garansi full premium selama masa aktif paket.",
+          "Jika kembali ke versi free, akan dibantu aktivasi ulang.",
+          "Garansi hangus jika akun diutak-atik (ganti email/region sembarangan).",
+          "Tidak ada pengembalian dana untuk kendala di luar kontrol (misal kartu ditolak)."
+        ]
+      }
+    };
+
+    const productSelect = document.getElementById('productSelect');
+    const syaratList = document.getElementById('syaratList');
+    const garansiList = document.getElementById('garansiList');
+
+    function renderRules(key) {
+      syaratList.innerHTML = "";
+      garansiList.innerHTML = "";
+
+      if (!key || !WARRANTY_DATA[key]) {
+        syaratList.innerHTML =
+          '<li class="placeholder">Silakan pilih produk terlebih dahulu untuk melihat syarat yang berlaku.</li>';
+        garansiList.innerHTML =
+          '<li class="placeholder">Garansi berbeda untuk setiap produk. Pilih produk di atas untuk detail lengkap.</li>';
+        return;
+      }
+
+      WARRANTY_DATA[key].syarat.forEach(text => {
+        const li = document.createElement('li');
+        li.textContent = text;
+        syaratList.appendChild(li);
+      });
+
+      WARRANTY_DATA[key].garansi.forEach(text => {
+        const li = document.createElement('li');
+        li.textContent = text;
+        garansiList.appendChild(li);
+      });
+    }
+
+    productSelect.addEventListener('change', e => {
+      renderRules(e.target.value);
+    });
+  </script>
+</body>
+</html>
