@@ -29,7 +29,7 @@
 
 window.VANZ_CONFIG = {
   // Nomor WhatsApp admin, format 62xxxx (tanpa + / 0 di depan)
-  whatsapp: "6281234567890",
+  whatsapp: "62895415204928",
 
   // Nama toko (dipakai di footer & judul tab)
   namaToko: "VanzShop.com",
