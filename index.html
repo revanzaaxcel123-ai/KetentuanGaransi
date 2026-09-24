@@ -81,45 +81,45 @@
        TEMA PAGI — putih + aksen pink
        ========================================================= */
     [data-theme="light"]{
-      --bg:#fdf7fa;
-      --card:rgba(255,255,255,.72);
-      --card-edge:linear-gradient(160deg,rgba(236,72,153,.45),rgba(255,255,255,.9) 30%,rgba(255,255,255,.6) 70%,rgba(247,212,106,.55));
-      --card-shadow:0 30px 80px -10px rgba(190,24,93,.16),0 2px 8px rgba(60,20,50,.05),inset 0 1px 0 #fff;
-      --text:#1c1624;
-      --text-2:#5d5668;
-      --text-3:#9b93a8;
-      --line:rgba(60,20,70,.08);
-      --line-2:rgba(60,20,70,.12);
-      --surface:linear-gradient(180deg,rgba(255,255,255,.9),rgba(255,255,255,.6));
-      --chip:rgba(255,255,255,.75);
-      --grid:rgba(120,40,100,.07);
-      --grid-op:.8;
-      --accent:#ec4899;
-      --accent-2:#1c1624;
-      --accent-rgb:236,72,153;
-      --dust-rgb:244,114,182;
-      --orb:rgba(244,114,182,.22);
-      --icon-bg:#15172f;
+      --bg:#f6f0e4;
+      --card:rgba(255,252,245,.8);
+      --card-edge:linear-gradient(160deg,rgba(185,132,35,.5),rgba(255,255,255,.9) 30%,rgba(255,255,255,.55) 70%,rgba(185,132,35,.3));
+      --card-shadow:0 30px 70px -34px rgba(120,90,30,.45),0 2px 8px rgba(60,40,10,.05),inset 0 1px 0 #fff;
+      --text:#211c13;
+      --text-2:#6f6656;
+      --text-3:#a39984;
+      --line:rgba(60,40,10,.08);
+      --line-2:rgba(60,40,10,.14);
+      --surface:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,252,245,.62));
+      --chip:rgba(255,255,255,.72);
+      --grid:rgba(60,40,10,.06);
+      --grid-op:.9;
+      --accent:#b98423;
+      --accent-2:#8f6212;
+      --accent-rgb:185,132,35;
+      --dust-rgb:200,150,50;
+      --orb:rgba(255,255,255,.5);
+      --icon-bg:#2a2319;
       --icon-fg:#ffffff;
       --icon-ring:rgba(255,255,255,.12);
-      --name:linear-gradient(100deg,#0b0b12 0%,#2a2633 25%,#6e6780 40%,#2a2633 55%,#0b0b12 80%,#2a2633 100%);
-      --primary-bg:radial-gradient(circle at 0% 0%,rgba(244,114,182,.28),transparent 55%),radial-gradient(circle at 100% 100%,rgba(247,212,106,.22),transparent 50%),linear-gradient(135deg,#fff3f8,#ffffff 70%);
-      --primary-ring:conic-gradient(from 0deg,transparent 0 55%,rgba(236,72,153,1) 70%,rgba(247,212,106,1) 78%,transparent 88%);
-      --primary-base:rgba(236,72,153,.25);
+      --name:linear-gradient(100deg,#8f6212 0%,#b98423 25%,#dcab4a 40%,#b98423 55%,#8f6212 80%,#b98423 100%);
+      --primary-bg:radial-gradient(circle at 0% 0%,rgba(233,185,73,.26),transparent 55%),radial-gradient(circle at 100% 100%,rgba(233,185,73,.14),transparent 50%),linear-gradient(135deg,#fff7e6,#fffdf8 70%);
+      --primary-ring:conic-gradient(from 0deg,transparent 0 55%,rgba(185,132,35,1) 70%,rgba(255,236,190,1) 78%,transparent 88%);
+      --primary-base:rgba(185,132,35,.28);
       --shine:rgba(255,255,255,.85);
-      --go-bg:#15172f;
-      --go-fg:#ffffff;
-      --wa-bg:linear-gradient(180deg,#ffffff,#fbf5f8);
-      --wa-fg:#1c1624;
-      --wa-border:rgba(236,72,153,.3);
-      --wa-shadow:0 10px 24px -12px rgba(190,24,93,.35);
+      --go-bg:#211c13;
+      --go-fg:#fff3cf;
+      --wa-bg:linear-gradient(180deg,#ffffff,#fbf6ec);
+      --wa-fg:#211c13;
+      --wa-border:rgba(185,132,35,.35);
+      --wa-shadow:0 10px 24px -12px rgba(120,90,30,.35);
       --brand-filter:grayscale(100%) brightness(0);   /* logo putih → siluet hitam */
       --noise-op:.025;
       --noise-blend:multiply;
-      --cursor:#1c1624;
-      --cursor-ring:rgba(28,22,36,.45);
-      --live:#10b981;
-      --toast-bg:rgba(255,255,255,.95);
+      --cursor:#211c13;
+      --cursor-ring:rgba(33,28,19,.45);
+      --live:#2f9e5b;
+      --toast-bg:rgba(255,252,245,.96);
       color-scheme:light;
     }
 
@@ -160,9 +160,9 @@
                  radial-gradient(circle at 15% 90%,rgba(var(--accent-rgb),.07) 0%,transparent 40%);
       transition:background .6s}
     [data-theme="light"] .bg-warm{
-      background:radial-gradient(circle at 80% 22%,rgba(244,114,182,.28) 0%,rgba(244,114,182,.1) 22%,transparent 55%),
-                 radial-gradient(circle at 10% 85%,rgba(251,207,232,.6) 0%,transparent 40%),
-                 radial-gradient(circle at 40% 0%,rgba(254,240,200,.55) 0%,transparent 35%)}
+      background:radial-gradient(ellipse 120% 80% at 50% 0%,#efe6d4,transparent 70%),
+                 radial-gradient(circle at 80% 22%,rgba(233,185,73,.28) 0%,rgba(233,185,73,.1) 22%,transparent 55%),
+                 radial-gradient(circle at 10% 85%,rgba(233,185,73,.12) 0%,transparent 40%)}
     .bg-beam{position:absolute;top:-30%;left:55%;width:40vw;height:160%;filter:blur(8px);
       background:linear-gradient(90deg,transparent,rgba(var(--dust-rgb),.05) 45%,rgba(var(--dust-rgb),.1) 50%,rgba(var(--dust-rgb),.05) 55%,transparent);
       transform:rotate(24deg);animation:beam 14s ease-in-out infinite alternate}
@@ -172,7 +172,8 @@
     .bg-spot.on{opacity:1}
     .orb{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 20%,var(--orb),transparent 70%);
       opacity:.6;animation:floatOrb 24s ease-in-out infinite alternate}
-    [data-theme="light"] .orb{opacity:0!important}
+    [data-theme="light"] .orb{opacity:.95!important;background:radial-gradient(circle at 32% 28%,#fffaf0,#e3d5b8 72%);
+      box-shadow:inset -26px -30px 60px rgba(150,110,40,.22),inset 10px 12px 30px rgba(255,255,255,.8),0 40px 80px -30px rgba(150,110,40,.35)}
     .orb-1{width:220px;height:220px;left:7%;top:62%;animation-delay:-4s}
     .orb-2{width:170px;height:170px;left:28%;top:30%;animation-delay:-12s;opacity:.52}
     .orb-3{width:280px;height:280px;right:12%;top:18%;animation-delay:-18s;opacity:.58}
@@ -594,6 +595,21 @@
       .back-btn{padding:0 11px}
       .d-actions .cbtn{flex:1 1 auto}
     }
+  
+    /* =========================================================
+       STABIL DI HP — matikan efek berat yang bikin UI kedip / hilang
+       ========================================================= */
+    @media (hover:none),(pointer:coarse){
+      :root{--card:rgba(14,14,21,.95);--nav-bg:rgba(10,10,16,.95);--nav-bg-2:rgba(10,10,16,.97)}
+      [data-theme="light"]{--card:rgba(255,252,245,.97);--nav-bg:rgba(255,252,245,.96);--nav-bg-2:rgba(255,252,245,.98)}
+      *{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+      .card,.panel{transform:none!important}
+      .reveal{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+      .bg-beam,.bg-noise,.bg-spot{display:none!important}
+      .bg-grid,.orb{animation:none!important}
+      .logo-halo::after{filter:none}
+      .slide{filter:none!important}
+    }
   </style>
 </head>
 <body>
@@ -892,7 +908,7 @@
       const light = root.dataset.theme === "light";
       themeBtn.setAttribute("aria-label", light ? "Ganti ke mode malam" : "Ganti ke mode pagi");
       themeBtn.dataset.cursor = light ? "Mode Malam" : "Mode Pagi";
-      metaTheme.setAttribute("content", light ? "#fdf7fa" : "#050509");
+      metaTheme.setAttribute("content", light ? "#f6f0e4" : "#050509");
       dustRGB = getComputedStyle(root).getPropertyValue("--dust-rgb").trim() || dustRGB;
       setTimeout(() => window.__vanzRefreshCursor && window.__vanzRefreshCursor(), 700);
     }
@@ -964,7 +980,7 @@
     const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(en => {
       if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
     }), { threshold: .08 }) : null;
-    $$(".reveal").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+    $$(".reveal").forEach(el => (io && fine) ? io.observe(el) : el.classList.add("in"));
 
     /* ===================== CUSTOM CURSOR + POP-UP ===================== */
     if (fine && !reduce) {
@@ -1009,7 +1025,7 @@
     function size() {
       const dpr = Math.min(devicePixelRatio || 1, 2);
       W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const n = Math.min(70, Math.round(W * H / 22000));
+      const n = Math.min(fine ? 70 : 24, Math.round(W * H / 22000));
       parts = Array.from({ length: n }, () => ({
         x: Math.random() * W, y: Math.random() * H, r: Math.random() * 1.4 + .3,
         vy: -(Math.random() * .25 + .05), vx: (Math.random() - .5) * .12,
@@ -1019,7 +1035,7 @@
     }
     function draw(t) {
       ctx.clearRect(0, 0, W, H);
-      ctx.shadowColor = `rgba(${dustRGB},.8)`; ctx.shadowBlur = 6;
+      ctx.shadowColor = `rgba(${dustRGB},.8)`; ctx.shadowBlur = fine ? 6 : 0;
       for (const p of parts) {
         const a = p.a * (.6 + .4 * Math.sin(p.ph + t * p.tw * .06));
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.2832);
